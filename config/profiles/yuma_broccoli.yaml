@@ -1,0 +1,15 @@
+project_name: "Yuma Broccoli Spatial Overlap"
+crop_name: "Broccoli"
+cdl_crop_code: 214
+year: 2023
+bbox_wgs84: [-114.85, 32.45, -113.90, 32.80]
+
+preprocessing:
+  min_cluster_pixels: 4
+  morph_open: false
+
+classification_strategy: "hybrid_dynamic"
+thresholds:
+  min_crop_acres: 10.0
+  small_parcel_max_acres: 10.0
+  small_parcel_min_crop_acres: 3.0

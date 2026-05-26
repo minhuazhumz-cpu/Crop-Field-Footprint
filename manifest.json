@@ -1,0 +1,247 @@
+{
+  "n_rows": 4,
+  "n_cols": 4,
+  "tiles": [
+    {
+      "id": "r0_c0",
+      "url": "output/map_tiles/coverage_map/tile_r0_c0.geojson",
+      "bounds": [
+        [
+          32.3396570629058,
+          -115.24104854241278
+        ],
+        [
+          32.503756204217645,
+          -114.89762387169418
+        ]
+      ],
+      "n_features": 2
+    },
+    {
+      "id": "r0_c1",
+      "url": "output/map_tiles/coverage_map/tile_r0_c1.geojson",
+      "bounds": [
+        [
+          32.3396570629058,
+          -114.89762387169418
+        ],
+        [
+          32.503756204217645,
+          -114.55419920097557
+        ]
+      ],
+      "n_features": 1083
+    },
+    {
+      "id": "r0_c2",
+      "url": "output/map_tiles/coverage_map/tile_r0_c2.geojson",
+      "bounds": [
+        [
+          32.3396570629058,
+          -114.55419920097557
+        ],
+        [
+          32.503756204217645,
+          -114.21077453025698
+        ]
+      ],
+      "n_features": 235
+    },
+    {
+      "id": "r0_c3",
+      "url": "output/map_tiles/coverage_map/tile_r0_c3.geojson",
+      "bounds": [
+        [
+          32.3396570629058,
+          -114.21077453025698
+        ],
+        [
+          32.503756204217645,
+          -113.86734985953838
+        ]
+      ],
+      "n_features": 205
+    },
+    {
+      "id": "r1_c0",
+      "url": "output/map_tiles/coverage_map/tile_r1_c0.geojson",
+      "bounds": [
+        [
+          32.503756204217645,
+          -115.24104854241278
+        ],
+        [
+          32.66785534552949,
+          -114.89762387169418
+        ]
+      ],
+      "n_features": 0
+    },
+    {
+      "id": "r1_c1",
+      "url": "output/map_tiles/coverage_map/tile_r1_c1.geojson",
+      "bounds": [
+        [
+          32.503756204217645,
+          -114.89762387169418
+        ],
+        [
+          32.66785534552949,
+          -114.55419920097557
+        ]
+      ],
+      "n_features": 4141
+    },
+    {
+      "id": "r1_c2",
+      "url": "output/map_tiles/coverage_map/tile_r1_c2.geojson",
+      "bounds": [
+        [
+          32.503756204217645,
+          -114.55419920097557
+        ],
+        [
+          32.66785534552949,
+          -114.21077453025698
+        ]
+      ],
+      "n_features": 1501
+    },
+    {
+      "id": "r1_c3",
+      "url": "output/map_tiles/coverage_map/tile_r1_c3.geojson",
+      "bounds": [
+        [
+          32.503756204217645,
+          -114.21077453025698
+        ],
+        [
+          32.66785534552949,
+          -113.86734985953838
+        ]
+      ],
+      "n_features": 1350
+    },
+    {
+      "id": "r2_c0",
+      "url": "output/map_tiles/coverage_map/tile_r2_c0.geojson",
+      "bounds": [
+        [
+          32.66785534552949,
+          -115.24104854241278
+        ],
+        [
+          32.831954486841326,
+          -114.89762387169418
+        ]
+      ],
+      "n_features": 3
+    },
+    {
+      "id": "r2_c1",
+      "url": "output/map_tiles/coverage_map/tile_r2_c1.geojson",
+      "bounds": [
+        [
+          32.66785534552949,
+          -114.89762387169418
+        ],
+        [
+          32.831954486841326,
+          -114.55419920097557
+        ]
+      ],
+      "n_features": 2477
+    },
+    {
+      "id": "r2_c2",
+      "url": "output/map_tiles/coverage_map/tile_r2_c2.geojson",
+      "bounds": [
+        [
+          32.66785534552949,
+          -114.55419920097557
+        ],
+        [
+          32.831954486841326,
+          -114.21077453025698
+        ]
+      ],
+      "n_features": 3351
+    },
+    {
+      "id": "r2_c3",
+      "url": "output/map_tiles/coverage_map/tile_r2_c3.geojson",
+      "bounds": [
+        [
+          32.66785534552949,
+          -114.21077453025698
+        ],
+        [
+          32.831954486841326,
+          -113.86734985953838
+        ]
+      ],
+      "n_features": 2782
+    },
+    {
+      "id": "r3_c0",
+      "url": "output/map_tiles/coverage_map/tile_r3_c0.geojson",
+      "bounds": [
+        [
+          32.831954486841326,
+          -115.24104854241278
+        ],
+        [
+          32.99605362815317,
+          -114.89762387169418
+        ]
+      ],
+      "n_features": 1
+    },
+    {
+      "id": "r3_c1",
+      "url": "output/map_tiles/coverage_map/tile_r3_c1.geojson",
+      "bounds": [
+        [
+          32.831954486841326,
+          -114.89762387169418
+        ],
+        [
+          32.99605362815317,
+          -114.55419920097557
+        ]
+      ],
+      "n_features": 0
+    },
+    {
+      "id": "r3_c2",
+      "url": "output/map_tiles/coverage_map/tile_r3_c2.geojson",
+      "bounds": [
+        [
+          32.831954486841326,
+          -114.55419920097557
+        ],
+        [
+          32.99605362815317,
+          -114.21077453025698
+        ]
+      ],
+      "n_features": 0
+    },
+    {
+      "id": "r3_c3",
+      "url": "output/map_tiles/coverage_map/tile_r3_c3.geojson",
+      "bounds": [
+        [
+          32.831954486841326,
+          -114.21077453025698
+        ],
+        [
+          32.99605362815317,
+          -113.86734985953838
+        ]
+      ],
+      "n_features": 0
+    }
+  ],
+  "manifest_url": "manifest.json"
+}

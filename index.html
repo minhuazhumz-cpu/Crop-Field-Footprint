@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_cfa6a1502e0ebc6aa779d354a0452123 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+    <div style="position: fixed; bottom: 28px; left: 28px; z-index: 9999;
+                background: white; padding: 10px 12px; border: 2px solid grey;
+                border-radius: 6px; font-size: 13px;">
+      <b>Yuma Broccoli Spatial Overlap</b><br>
+      CDL 2023 — Broccoli (code 214)<br>
+      <span style="color:#2ca25f;">&#9632;</span> Broccoli Field<br>
+      <span style="color:#e31a1c;">&#9632;</span> Low/Trace<br>
+      <small>Broccoli: crop_acres >= 10 ac OR (parcel < 10 ac AND crop_acres >= 3 ac)</small>
+    </div>
+    
+    
+            <div class="folium-map" id="map_cfa6a1502e0ebc6aa779d354a0452123" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_cfa6a1502e0ebc6aa779d354a0452123 = L.map(
+                "map_cfa6a1502e0ebc6aa779d354a0452123",
+                {
+                    center: [32.625, -114.375],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1e92015299972e3a1b70f732e2182847 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "CartoDB",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_1e92015299972e3a1b70f732e2182847.addTo(map_cfa6a1502e0ebc6aa779d354a0452123);
+        
+    
+            var tile_layer_2b2cff9ac4e0cce71bc720262213a277 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_2b2cff9ac4e0cce71bc720262213a277.addTo(map_cfa6a1502e0ebc6aa779d354a0452123);
+        
+    
+            var rectangle_42bd47f39a15a1e694ae685a4490eaab = L.rectangle(
+                [[32.45, -114.85], [32.8, -113.9]],
+                {"bubblingMouseEvents": true, "color": "#984ea3", "dashArray": "6", "dashOffset": null, "fill": false, "fillColor": "#984ea3", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_cfa6a1502e0ebc6aa779d354a0452123);
+        
+    
+            rectangle_42bd47f39a15a1e694ae685a4490eaab.bindTooltip(
+                `<div>
+                     Analysis bounding box
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var feature_group_727ad4fac82b2ec88718c5367b0bc6ff = L.featureGroup(
+                {
+}
+            );
+        
+    
+            feature_group_727ad4fac82b2ec88718c5367b0bc6ff.addTo(map_cfa6a1502e0ebc6aa779d354a0452123);
+        
+    
+            var layer_control_29687d75d94478c38290a41225fbe4a1_layers = {
+                base_layers : {
+                    "cartodbpositron" : tile_layer_1e92015299972e3a1b70f732e2182847,
+                    "OpenStreetMap" : tile_layer_2b2cff9ac4e0cce71bc720262213a277,
+                },
+                overlays :  {
+                    "FTW fields (Broccoli coverage)" : feature_group_727ad4fac82b2ec88718c5367b0bc6ff,
+                },
+            };
+            let layer_control_29687d75d94478c38290a41225fbe4a1 = L.control.layers(
+                layer_control_29687d75d94478c38290a41225fbe4a1_layers.base_layers,
+                layer_control_29687d75d94478c38290a41225fbe4a1_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_cfa6a1502e0ebc6aa779d354a0452123);
+
+        
+</script>
+
+<!-- crop-field-footprint-tile-loader -->
+<script>
+(function() {
+        var manifestUrl = "manifest.json";
+        var loadedTiles = {};
+        var ftwLayer = null;
+
+        function boot() {
+            if (typeof map_cfa6a1502e0ebc6aa779d354a0452123 === "undefined" || typeof feature_group_727ad4fac82b2ec88718c5367b0bc6ff === "undefined") {
+                setTimeout(boot, 10);
+                return;
+            }
+            var map = map_cfa6a1502e0ebc6aa779d354a0452123;
+            var fieldGroup = feature_group_727ad4fac82b2ec88718c5367b0bc6ff;
+            if (ftwLayer) return;
+
+            ftwLayer = L.geoJSON(null, {
+                style: function(feature) {
+                    var cat = (feature.properties || {}).coverage_category || "";
+                    var isCrop = cat.indexOf("Broccoli Field") !== -1;
+                    return {
+                        color: "#333333",
+                        fillColor: isCrop ? "#2ca25f" : "#e31a1c",
+                        fillOpacity: isCrop ? 0.65 : 0.25,
+                        weight: 1
+                    };
+                },
+                onEachFeature: function(feature, layer) {
+                    fieldGroup.addLayer(layer);
+                    var p = feature.properties || {};
+                    layer.bindTooltip(
+                        "<table>" +
+                        "<tr><th>FTW Field ID</th><td>" + p.ftw_field_id + "</td></tr>" +
+                        "<tr><th>Parcel area (acres)</th><td>" + p.area_acres + "</td></tr>" +
+                        "<tr><th>CDL crop in parcel (acres)</th><td>" + p.crop_acres_in_field + "</td></tr>" +
+                        "<tr><th>% of parcel area</th><td>" + p.pct_of_polygon + "</td></tr>" +
+                        "<tr><th>Category</th><td>" + p.coverage_category + "</td></tr>" +
+                        "</table>",
+                        {sticky: true}
+                    );
+                }
+            });
+
+            function tileBounds(tile) {
+                return L.latLngBounds(tile.bounds[0], tile.bounds[1]);
+            }
+
+            function loadVisibleTiles(manifest) {
+                var view = map.getBounds().pad(0.08);
+                manifest.tiles.forEach(function(tile) {
+                    if (loadedTiles[tile.id]) return;
+                    if (!view.intersects(tileBounds(tile))) return;
+                    loadedTiles[tile.id] = "loading";
+                    fetch(tile.url)
+                        .then(function(resp) { return resp.json(); })
+                        .then(function(data) {
+                            ftwLayer.addData(data);
+                            loadedTiles[tile.id] = "done";
+                        })
+                        .catch(function(err) {
+                            console.error("Failed to load tile", tile.id, err);
+                            delete loadedTiles[tile.id];
+                        });
+                });
+            }
+
+            fetch(manifestUrl)
+                .then(function(resp) { return resp.json(); })
+                .then(function(manifest) {
+                    map.whenReady(function() { loadVisibleTiles(manifest); });
+                    map.on("moveend zoomend", function() { loadVisibleTiles(manifest); });
+                })
+                .catch(function(err) {
+                    console.error("Failed to load map tile manifest", err);
+                });
+        }
+
+        boot();
+    })();
+</script>
+<!-- crop-field-footprint-tile-loader -->
+</html>
